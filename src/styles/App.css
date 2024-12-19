@@ -1,0 +1,41 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #1a1a1a;
+}
+
+.app-container {
+    border: 1px solid red;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #1a1a1a;
+    color: white;
+    padding: 50px;
+    gap: 5rem;
+    text-align: center;
+}
+
+.content-wrapper {
+    border: 1px solid blue;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    border: 1px solid green;
+    font-size: 3rem;
+    color: #6500ff;
+    text-shadow: 0 0 15px rgba(132, 47, 255, 1);
+    padding: 10;
+    margin: 0;
+}
+
+
