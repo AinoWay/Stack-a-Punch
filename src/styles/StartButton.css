@@ -1,17 +1,17 @@
 .start-button {
     padding: 20px 40px;
-    background-color: #1e90ff;
+    background-color: #6500ff;
     color: white;
     font-size: 24px;
-    border: 3px solid #00bfff;
+    border: 3px solid #9f6aff;
     border-radius: 8px;
     cursor: pointer;
-    text-shadow: 0 0 10px rgba(0, 191, 255, 0.7);
-    box-shadow: 0 0 20px rgba(0, 191, 255, 0.5);
+    text-shadow: 0 0 10px rgba(132, 47, 255, 0.7);
+    box-shadow: 0 0 20px rgba(132, 47, 255, 0.5);
     transition: all 0.3s ease;
 }
 
 .start-button:hover {
-    background-color: #00bfff;
-    box-shadow: 0 0 30px rgba(0, 191, 255, 0.8);
+    background-color: #6500ff;
+    box-shadow: 0 0 30px rgba(132, 47, 255, 0.8);
 }

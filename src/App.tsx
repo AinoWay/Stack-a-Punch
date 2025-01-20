@@ -6,7 +6,7 @@ function App() {
     return (
         <div className="app-container">
             <div className="content-wrapper">
-                <h1>DSA Pack-a-Punch</h1>
+                <h1>Stack-a-Punch</h1>
                 <StartButton />
             </div>
         </div>
