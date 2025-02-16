@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react'
 import '../styles/StartButton.css'
 
-function StartButton() {
-    const [isPressed, setIsPressed] = useState(false)
+function StartButton({ onStart }: { onStart: () => void }) {
+    const [isPressed, setIsPressed] = useState(false);
 
     useEffect(() => {
 
@@ -10,22 +10,23 @@ function StartButton() {
             
             if (event.key.toLowerCase() === 'f') {
                 
-                setIsPressed(true)
+                setIsPressed(true);
+                onStart(); // tells parent comp F was pressed
             }
-        }
+        };
 
-        window.addEventListener('keydown', handleKeyPress)
+        window.addEventListener('keydown', handleKeyPress);
 
-        return () => window.removeEventListener('keydown', handleKeyPress)
+        return () => window.removeEventListener('keydown', handleKeyPress);
 
-    }, [])
+    }, []);
 
     return (
         <div className="start-button">
-        {}
-        {!isPressed ? "Press F to Lock in" : "LOCKED IN"}
+        
+            {!isPressed ? "Press F to Lock in" : "LOCKED IN"}
         </div>
-    )
+    );
 }
 
 export default StartButton
